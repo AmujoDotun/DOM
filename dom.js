@@ -20,13 +20,27 @@
 
 // GET ELEMENT BY CLASS NAME
 
-var items = document.getElementsByClassName('list-group-item');
-console.log(items);
-console.log(items[1]);
-items[1].style.fontWeight ='bold';
-items[1].style.backgroundColor = 'blue';
+// var items = document.getElementsByClassName('list-group-item');
+// console.log(items);
+// console.log(items[1]);
+// items[1].style.fontWeight ='bold';
+// items[1].style.backgroundColor = 'blue';
 
-for(var i =0; i<items.length; i++)
+// for(var i =0; i<items.length; i++)
+// {
+//     items[i].style.backgroundColor ='red';
+// }
+
+
+// GET ELEMENT BY TAG NAME
+
+var li = document.getElementsByTagName('li');
+console.log(li);
+console.log(li[1]);
+li[1].style.fontWeight ='bold';
+li[1].style.backgroundColor = 'blue';
+
+for(var i =0; i<li.length; i++)
 {
-    items[i].style.backgroundColor ='red';
+    li[i].style.backgroundColor ='red';
 }
