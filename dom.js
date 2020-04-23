@@ -12,7 +12,21 @@
 // document.all[8].textContent = 'Hello THere';
 // console.log(document.images);
 
-var headerTitle = document.getElementById('header-title');
-console.log(headerTitle);
-headerTitle.textContent = 'Hello There';
-headerTitle.innerText = "who is there";
+// var headerTitle = document.getElementById('header-title');
+// console.log(headerTitle);
+// headerTitle.textContent = 'Hello There';
+// headerTitle.innerText = "who is there";
+
+
+// GET ELEMENT BY CLASS NAME
+
+var items = document.getElementsByClassName('list-group-item');
+console.log(items);
+console.log(items[1]);
+items[1].style.fontWeight ='bold';
+items[1].style.backgroundColor = 'blue';
+
+for(var i =0; i<items.length; i++)
+{
+    items[i].style.backgroundColor ='red';
+}
