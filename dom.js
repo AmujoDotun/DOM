@@ -54,19 +54,25 @@ header.style.borderBottom =' solid 4px #ccc';
 // var headerTitle = document.querySelector('#header-title');
 // headerTitle.style.align ='right';
 
-var input = document.querySelector('input');
-input.value = 'hello World';
+// var input = document.querySelector('input');
+// input.value = 'hello World';
 
-var submit = document.querySelector('input[type="submit"]');
-submit.value ="SEND";
-submit.style.backgroundColor ="grey";
+// var submit = document.querySelector('input[type="submit"]');
+// submit.value ="SEND";
+// submit.style.backgroundColor ="grey";
 
-var item = document.querySelector('.list-group-item');
-item.style.color ="red";
+// var item = document.querySelector('.list-group-item');
+// item.style.color ="red";
 
-var lastItem = document.querySelector('.list-group-item:last-child');
-lastItem.style.color ="blue";
+// var lastItem = document.querySelector('.list-group-item:last-child');
+// lastItem.style.color ="blue";
 
-var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+// var secondItem = document.querySelector('.list-group-item:nth-child(2)');
 
-secondItem.style.color ="coral";
+// secondItem.style.color ="coral";
+
+// PARENT NODE
+
+var itemList = document.querySelector('#items');
+console.log(itemList.parentNode);
+itemList.parentNode.style.backgroundColor = 'grey';
