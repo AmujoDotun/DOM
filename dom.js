@@ -85,6 +85,13 @@ var itemList = document.querySelector('#items');
 
 // CHildNode
 // console.log(itemList.childNodes);
-console.log(itemList.childElementCount);
-console.log(itemList.chilcdren);
-itemList.children[1].style.backgroundColor = 'yellow'
+// console.log(itemList.childElementCount);
+// console.log(itemList.chilcdren);
+// itemList.children[1].style.backgroundColor = 'yellow'
+
+// firstChild
+// console.log(itemList.firstChild);
+
+// firstELement Child
+console.log(itemList.firstElementChild);
+itemList.firstElementChild.textContent = 'Hello Wolrd';
