@@ -73,6 +73,11 @@ header.style.borderBottom =' solid 4px #ccc';
 
 // PARENT NODE
 
+// var itemList = document.querySelector('#items');
+// console.log(itemList.parentNode);
+// itemList.parentNode.style.backgroundColor = 'grey';
+
+// PARENT ELEMENT
 var itemList = document.querySelector('#items');
-console.log(itemList.parentNode);
-itemList.parentNode.style.backgroundColor = 'grey';
+console.log(itemList.parentElement);
+itemList.parentElement.style.backgroundColor = 'grey';
