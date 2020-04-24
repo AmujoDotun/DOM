@@ -93,5 +93,32 @@ var itemList = document.querySelector('#items');
 // console.log(itemList.firstChild);
 
 // firstELement Child
-console.log(itemList.firstElementChild);
-itemList.firstElementChild.textContent = 'Hello Wolrd';
+// console.log(itemList.firstElementChild);
+// itemList.firstElementChild.textContent = 'Hello Wolrd';
+
+// CREATING ELEMENT IN THE DOM
+
+// Create DIv
+var newDiv = document.createElement('div');
+
+//assign class name
+
+newDiv.className = 'hello';
+newDiv.id = "hello1";
+
+newDiv.setAttribute('title', 'helloDiv');
+
+// Create text Node
+var newDivText = document.createTextNode('Hello There I Just Landed My super Power');
+
+// Add Text
+newDiv.appendChild(newDivText);
+
+// display test on the DOM
+var container = document.querySelector('header .container');
+
+var h1 = document.querySelector('header h1');
+
+console.log(newDiv);
+
+container.insertBefore(newDiv, h1);
