@@ -123,3 +123,12 @@ console.log(newDiv);
 
 newDiv.style.fontSize = '30px';
 container.insertBefore(newDiv, h1);
+
+var button = document.getElementById('button').addEventListener('click', buttonClick)
+
+function buttonClick()
+{
+    // console.log('Hello There');
+   document.getElementById('header-title').textContent ='Yes I know';
+   document.querySelector('#main').style.backgroundColor ='red';
+}
