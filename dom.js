@@ -126,9 +126,14 @@ container.insertBefore(newDiv, h1);
 
 var button = document.getElementById('button').addEventListener('click', buttonClick)
 
-function buttonClick()
+function buttonClick(e)
 {
     // console.log('Hello There');
-   document.getElementById('header-title').textContent ='Yes I know';
-   document.querySelector('#main').style.backgroundColor ='red';
+//    document.getElementById('header-title').textContent ='Yes I know';
+//    document.querySelector('#main').style.backgroundColor ='red';
+    console.log(e.target);
+    console.log(e.target.id);
+    console.log(e.target.className);
+    var output = document.getElementById('output');
+    output.innerHTML ='<h3>'+ e.target.id +'</h3>';
 }
