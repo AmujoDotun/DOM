@@ -153,12 +153,29 @@ var box = document.getElementById('box');
 
 // box.addEventListener('mouseout', runEvent);
 // box.addEventListener('mouseover', runEvent);
-box.addEventListener('mousemove', runEvent);
+// box.addEventListener('mousemove', runEvent);
+document.body.addEventListener('mousemove', runEvent);
+
+var itemInput = document.querySelector('input[type="text"]');
+var form = document.querySelector('form');
+
+// itemInput.addEventListener('keydown', runEvent);
+// itemInput.addEventListener('keyup', runEvent);
+// itemInput.addEventListener('keypress', runEvent);
+// itemInput.addEventListener('focus', runEvent);
+// itemInput.addEventListener('blur', runEvent);
+
+itemInput.addEventListener('cut', runEvent);
+itemInput.addEventListener('paste', runEvent);
+itemInput.addEventListener('input', runEvent);
+
 
 
 function runEvent(e)
 {
     console.log('EVENT TYPE: ' +e.type);
+    // document.body.style.display = 'none'; this will make the display to dissappear
+    document.getElementById('output').innerHTML ='<h2>'+e.target.value+ '</h2>';
     // output.innerHTML = '<h3>MouseX:' +e.offsetX +'</h3><h3> MouseY :'+e.offsetY +'</h3>';
     document.body.style.backgroundColor = "rgb("+e.offsetX+", "+e.offsetY+", 40)";
 }
