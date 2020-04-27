@@ -165,15 +165,21 @@ var form = document.querySelector('form');
 // itemInput.addEventListener('focus', runEvent);
 // itemInput.addEventListener('blur', runEvent);
 
-itemInput.addEventListener('cut', runEvent);
-itemInput.addEventListener('paste', runEvent);
-itemInput.addEventListener('input', runEvent);
+// itemInput.addEventListener('cut', runEvent);
+// itemInput.addEventListener('paste', runEvent);
+// itemInput.addEventListener('input', runEvent);
+
+var select = document.querySelector('select');
+
+// select.addEventListener('change', runEvent);
+// select.addEventListener('input', runEvent);
 
 
 
 function runEvent(e)
 {
     console.log('EVENT TYPE: ' +e.type);
+    console.log(e.target.value);
     // document.body.style.display = 'none'; this will make the display to dissappear
     document.getElementById('output').innerHTML ='<h2>'+e.target.value+ '</h2>';
     // output.innerHTML = '<h3>MouseX:' +e.offsetX +'</h3><h3> MouseY :'+e.offsetY +'</h3>';
