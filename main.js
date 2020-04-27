@@ -5,6 +5,9 @@ var itemList = document.getElementById('items');
 
 form.addEventListener('submit', addItem);
 
+// Delete Event
+itemList.addEventListener('click', deleteItem);
+
 function addItem(e)
 {
     e.preventDefault();
@@ -35,10 +38,15 @@ function addItem(e)
     itemList.appendChild(li)
 }
 
-
-// var deleteBtn = document.createElement('button');
-
-// // Add classes to Del btn
-// deleteBtn.className ="btn btn-danger btn-sm float-right";
-// deleteBtn.appendChild(document.createTextNode('X'));
-// li.appendChild(deleteBtn);
+// Delete Item function 
+function deleteItem(e)
+{
+    if(e.target.classList.contains('delete'))
+    {
+        if(confirm('Are you sure you want to delete?'))
+        {
+            var li = e.target.parentElement;
+            itemList.removeChild(li);
+        }
+    }
+}
