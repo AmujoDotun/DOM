@@ -174,12 +174,16 @@ var select = document.querySelector('select');
 // select.addEventListener('change', runEvent);
 // select.addEventListener('input', runEvent);
 
+form.addEventListener('submit', runEvent);
+
 
 
 function runEvent(e)
 {
+    e.preventDefault();
     console.log('EVENT TYPE: ' +e.type);
-    console.log(e.target.value);
+
+    // console.log(e.target.value);
     // document.body.style.display = 'none'; this will make the display to dissappear
     document.getElementById('output').innerHTML ='<h2>'+e.target.value+ '</h2>';
     // output.innerHTML = '<h3>MouseX:' +e.offsetX +'</h3><h3> MouseY :'+e.offsetY +'</h3>';
