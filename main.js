@@ -21,5 +21,24 @@ function addItem(e)
     // Add text Node with input value
 
     li.appendChild(document.createTextNode(newItem));
-    itemList.appendChild(li);
+   ;
+
+    // Create Del button to the item list added
+    var deleteBtn = document.createElement('button');
+
+    // Add Class
+    deleteBtn.className ='btn btn-danger btn-sm float-right delete';
+ 
+    deleteBtn.appendChild(document.createTextNode('X'));
+    li.appendChild(deleteBtn);
+
+    itemList.appendChild(li)
 }
+
+
+// var deleteBtn = document.createElement('button');
+
+// // Add classes to Del btn
+// deleteBtn.className ="btn btn-danger btn-sm float-right";
+// deleteBtn.appendChild(document.createTextNode('X'));
+// li.appendChild(deleteBtn);
