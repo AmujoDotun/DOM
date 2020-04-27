@@ -145,3 +145,16 @@ function buttonClick(e)
     console.log(e.ctrlKey);
     console.log(e.shiftKey);
 }
+
+var box = document.getElementById('box');
+
+// box.addEventListener('mouseenter', runEvent);
+// box.addEventListener('mouseleave', runEvent);
+
+// box.addEventListener('mouseout', runEvent);
+// box.addEventListener('mouseover', runEvent);
+// box.addEventListener('mousemove', runEvent);
+function runEvent(e)
+{
+    console.log('EVENT TYPE: ' +e.type);
+}
