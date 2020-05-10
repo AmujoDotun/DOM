@@ -28,7 +28,7 @@ function addItem(e)
     // Add text Node with input value
 
     li.appendChild(document.createTextNode(newItem));
-   ;
+  
 
     // Create Del button to the item list added
     var deleteBtn = document.createElement('button');
